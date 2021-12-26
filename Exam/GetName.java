@@ -30,7 +30,7 @@ public class GetName extends HttpServlet {
         try {
             Class.forName(JDBC_DRIVER);
             conn = DriverManager.getConnection(DB_URL, USER, PASS);
-            jedis = new Jedis("123.60.73.119"); 
+            jedis = new Jedis("127.0.0.1"); 
 
         } catch (Exception e) {
             e.printStackTrace();
